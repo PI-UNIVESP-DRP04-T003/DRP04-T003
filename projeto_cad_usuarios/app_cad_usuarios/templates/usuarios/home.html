@@ -10,4 +10,15 @@
         </div>
     </form>
     {% endblock %}
+
+    <!-- essas linhas que iniciam com chaves são de código Django, onde colocaremos os gráficos. não alterar -->
+    {% block content %}
+
+    {% autoescape off %}
+
+    {{ fig1 }}
+
+    {% endautoescape %}
+
+    {% endblock content %}
     
