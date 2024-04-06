@@ -8,6 +8,7 @@
 from django.db import models
 
 
+<<<<<<< HEAD
 class Houses(models.Model):
     id = models.TextField(blank=True, null=False, primary_key=True)
     date = models.TextField(blank=True, null=True)
@@ -34,3 +35,9 @@ class Houses(models.Model):
     class Meta:
         managed = False
         db_table = 'houses'
+=======
+class usuario(models.Model):
+    id_usuario = models.AutoField(primary_key=True)
+    nome = models.TextField(max_length=255)
+    rs = models.TextField(max_length=255)
+>>>>>>> front
